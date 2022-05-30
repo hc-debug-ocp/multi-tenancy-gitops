@@ -29,6 +29,7 @@ spec:
                 name: ibm-automation-core
                 source: iaf-core-operators
                 sourceNamespace: openshift-marketplace
+                startingCSV: ibm-automation-core.v1.3.5
   syncPolicy:
     automated:
       prune: true
