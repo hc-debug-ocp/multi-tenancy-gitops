@@ -25,11 +25,11 @@ spec:
               name: ibm-automation-foundation-core
               subscription:
                 channel: v1.3
-                installPlanApproval: Automatic
+                installPlanApproval: Manual
                 name: ibm-automation-core
                 source: iaf-core-operators
                 sourceNamespace: openshift-marketplace
-                startingCSV: ibm-automation-core.v1.3.4
+                startingCSV: ibm-automation-core.v1.3.6
   syncPolicy:
     automated:
       prune: true
