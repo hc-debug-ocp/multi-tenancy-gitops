@@ -11,11 +11,15 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: infra
   source:
+    repoURL: https://github.com/hc-debug-ocp/multi-tenancy-gitops-infra.git
+    targetRevision: master
     path: consolenotification
     helm:
       values: |
